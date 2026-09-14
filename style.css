@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,103 +9,161 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Page */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background: #f4f7fb;
-    color: #1f2937;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 60px 25px;
-}
+<body>
 
-/* Main heading */
-h1 {
-    font-size: 3rem;
-    margin-bottom: 5px;
-    color: #111827;
-}
+    <header>
+        <h1>Sam Morrey</h1>
 
-/* Section headings */
-h2 {
-    font-size: 1.6rem;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    color: #2563eb;
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 8px;
-}
+        <p class="subtitle">
+            Computing & IT (Networking) Graduate
+        </p>
 
-/* Paragraphs */
-p {
-    margin-bottom: 18px;
-    font-size: 1.05rem;
-}
+        <p class="intro">
+            Recent Computing and IT graduate with a focus on networking,
+            IT support and cybersecurity. Interested in entry-level IT,
+            technical support, networking and infrastructure roles.
+        </p>
+    </header>
 
-/* Skills list */
-ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
-}
 
-li {
-    background: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
+    <main>
 
-/* Links */
-a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 600;
-}
+        <section>
+            <h2>About Me</h2>
 
-a:hover {
-    text-decoration: underline;
-}
+            <p>
+                I recently completed my degree in Computing and IT,
+                specialising in networking. Throughout my studies I gained
+                practical experience with networking, operating systems,
+                troubleshooting and cybersecurity.
+            </p>
 
-/* Sections */
-section {
-    margin-bottom: 35px;
-}
+            <p>
+                I am currently looking for my first full-time role in IT
+                where I can develop my technical skills and gain professional
+                experience.
+            </p>
+        </section>
 
-/* Optional card styling */
-.card {
-    background: white;
-    padding: 25px;
-    margin-top: 15px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
-}
 
-/* Mobile */
-@media (max-width: 600px) {
-    body {
-        padding: 35px 20px;
-    }
+        <section>
+            <h2>Skills</h2>
 
-    h1 {
-        font-size: 2.3rem;
-    }
+            <div class="skills">
 
-    h2 {
-        font-size: 1.4rem;
-    }
+                <span>Networking</span>
+                <span>TCP/IP</span>
+                <span>Routing</span>
+                <span>Switching</span>
+                <span>Linux</span>
+                <span>Windows</span>
+                <span>Wireshark</span>
+                <span>Cybersecurity</span>
+                <span>Troubleshooting</span>
+                <span>IT Support</span>
 
-    ul {
-        flex-direction: column;
-    }
-}
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="card">
+
+                <h3>Networking Labs</h3>
+
+                <p>
+                    Practical networking exercises covering routing,
+                    switching, IP addressing, subnetting and network
+                    troubleshooting.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Cybersecurity Labs</h3>
+
+                <p>
+                    Completed controlled cybersecurity exercises involving
+                    network enumeration, vulnerability assessment and
+                    security testing within simulated environments.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Linux & IT Administration</h3>
+
+                <p>
+                    Experience working with Linux and Windows systems,
+                    command-line tools, user administration, networking
+                    and general troubleshooting.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section>
+            <h2>Education</h2>
+
+            <div class="card">
+
+                <h3>Computing & IT (Networking)</h3>
+
+                <p>
+                    The Open University
+                </p>
+
+                <p>
+                    Completed 2026
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section>
+            <h2>Contact</h2>
+
+            <p>
+                You can find me on GitHub or LinkedIn.
+            </p>
+
+            <div class="contact-links">
+
+                <a href="https://github.com/morrey-s" target="_blank">
+                    GitHub
+                </a>
+
+                <!-- Replace this with your LinkedIn link -->
+                <a href="#" target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Sam Morrey
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
