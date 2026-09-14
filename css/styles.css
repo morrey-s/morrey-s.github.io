@@ -10824,7 +10824,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-
+body {
+  background-color: #eef1f5;
+}
 /* --------------------------------------------------------------------------
    Portfolio customisations
    -------------------------------------------------------------------------- */
