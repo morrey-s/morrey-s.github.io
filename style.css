@@ -1,169 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
+/* ------------------------------
+   General
+------------------------------ */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sam | IT & Networking Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <header>
-        <h1>Sam Morrey</h1>
-
-        <p class="subtitle">
-            Computing & IT (Networking) Graduate
-        </p>
-
-        <p class="intro">
-            Recent Computing and IT graduate with a focus on networking,
-            IT support and cybersecurity. Interested in entry-level IT,
-            technical support, networking and infrastructure roles.
-        </p>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
-    <main>
-
-        <section>
-            <h2>About Me</h2>
-
-            <p>
-                I recently completed my degree in Computing and IT,
-                specialising in networking. Throughout my studies I gained
-                practical experience with networking, operating systems,
-                troubleshooting and cybersecurity.
-            </p>
-
-            <p>
-                I am currently looking for my first full-time role in IT
-                where I can develop my technical skills and gain professional
-                experience.
-            </p>
-        </section>
+html {
+    scroll-behavior: smooth;
+}
 
 
-        <section>
-            <h2>Skills</h2>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
 
-            <div class="skills">
+    background-color: #f4f7fb;
+    color: #1f2937;
 
-                <span>Networking</span>
-                <span>TCP/IP</span>
-                <span>Routing</span>
-                <span>Switching</span>
-                <span>Linux</span>
-                <span>Windows</span>
-                <span>Wireshark</span>
-                <span>Cybersecurity</span>
-                <span>Troubleshooting</span>
-                <span>IT Support</span>
+    max-width: 950px;
 
-            </div>
-        </section>
+    margin: 0 auto;
+
+    padding: 60px 30px;
+}
 
 
-        <section>
-            <h2>Projects</h2>
+/* ------------------------------
+   Header
+------------------------------ */
 
-            <div class="card">
-
-                <h3>Networking Labs</h3>
-
-                <p>
-                    Practical networking exercises covering routing,
-                    switching, IP addressing, subnetting and network
-                    troubleshooting.
-                </p>
-
-            </div>
+header {
+    margin-bottom: 60px;
+}
 
 
-            <div class="card">
+h1 {
+    font-size: 3.5rem;
 
-                <h3>Cybersecurity Labs</h3>
+    color: #111827;
 
-                <p>
-                    Completed controlled cybersecurity exercises involving
-                    network enumeration, vulnerability assessment and
-                    security testing within simulated environments.
-                </p>
-
-            </div>
+    margin-bottom: 5px;
+}
 
 
-            <div class="card">
+.subtitle {
+    font-size: 1.4rem;
 
-                <h3>Linux & IT Administration</h3>
+    color: #2563eb;
 
-                <p>
-                    Experience working with Linux and Windows systems,
-                    command-line tools, user administration, networking
-                    and general troubleshooting.
-                </p>
+    font-weight: 600;
 
-            </div>
-
-        </section>
+    margin-bottom: 20px;
+}
 
 
-        <section>
-            <h2>Education</h2>
+.intro {
+    max-width: 700px;
 
-            <div class="card">
+    font-size: 1.1rem;
 
-                <h3>Computing & IT (Networking)</h3>
-
-                <p>
-                    The Open University
-                </p>
-
-                <p>
-                    Completed 2026
-                </p>
-
-            </div>
-
-        </section>
+    color: #4b5563;
+}
 
 
-        <section>
-            <h2>Contact</h2>
+/* ------------------------------
+   Sections
+------------------------------ */
 
-            <p>
-                You can find me on GitHub or LinkedIn.
-            </p>
-
-            <div class="contact-links">
-
-                <a href="https://github.com/morrey-s" target="_blank">
-                    GitHub
-                </a>
-
-                <!-- Replace this with your LinkedIn link -->
-                <a href="#" target="_blank">
-                    LinkedIn
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
+section {
+    margin-bottom: 60px;
+}
 
 
-    <footer>
+h2 {
+    font-size: 1.8rem;
 
-        <p>
-            © 2026 Sam Morrey
-        </p>
+    color: #111827;
 
-    </footer>
+    margin-bottom: 25px;
 
-</body>
+    padding-bottom: 8px;
 
-</html>
+    border-bottom: 2px solid #dbe3ef;
+}
+
+
+h3 {
+    color: #111827;
+
+    margin-bottom: 10px;
+}
+
+
+p {
+    margin-bottom: 16px;
+}
+
+
+/* ------------------------------
+   Skills
+------------------------------ */
+
+.skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.skills span {
+    background-color: white;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 8px;
+
+    padding: 9px 15px;
+
+    font-size: 0.95rem;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ------------------------------
+   Project Cards
+------------------------------ */
+
+.card {
+    background-color: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.09);
+}
+
+
+/* ------------------------------
+   Links
+------------------------------ */
+
+a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.contact-links {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+.contact-links a {
+    background-color: #2563eb;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+
+.contact-links a:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    border-top: 1px solid #dbe3ef;
+
+    padding-top: 25px;
+
+    margin-top: 40px;
+
+    color: #6b7280;
+
+    font-size: 0.9rem;
+}
+
+
+/* ------------------------------
+   Mobile
+------------------------------ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 35px 20px;
+    }
+
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+
+    .skills {
+        gap: 8px;
+    }
+
+
+    .skills span {
+        padding: 8px 12px;
+    }
+
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+
+    .contact-links a {
+        text-align: center;
+    }
+
+}
