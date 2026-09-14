@@ -10827,18 +10827,40 @@ textarea.form-control-lg {
 /* --------------------------------------------------------------------------
    Portfolio customisations
    -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+   Portfolio customisations
+   -------------------------------------------------------------------------- */
+
 html {
   scroll-padding-bottom: 5rem;
 }
 
 body {
   min-height: 100vh;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84)),
-    url("https://dummyimage.com/1920x1080/dee2e6/6c757d.jpg") no-repeat center center fixed;
-  background-size: cover;
+  position: relative;
+  background-color: #eef1f5;
 }
 
+/* Fixed background image */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url("../assets/background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Main portfolio layout */
 .portfolio-page {
   padding-top: 1rem;
   padding-bottom: 5rem;
@@ -10856,8 +10878,9 @@ body {
   padding-bottom: 8rem;
 }
 
+/* Content cards */
 .portfolio-card {
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.90);
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 1rem;
   padding: 2rem;
@@ -10865,6 +10888,7 @@ body {
   backdrop-filter: blur(4px);
 }
 
+/* Small heading above name */
 .eyebrow {
   font-size: 0.85rem;
   font-weight: 700;
@@ -10873,13 +10897,16 @@ body {
   color: #6c757d;
 }
 
+/* Skill badges */
 .skill-badge {
   font-size: 0.95rem;
   font-weight: 500;
   padding: 0.7rem 1rem;
 }
 
+/* Mobile adjustments */
 @media (max-width: 767.98px) {
+
   .portfolio-page {
     padding-bottom: 6rem;
   }
@@ -10892,11 +10919,4 @@ body {
   .portfolio-card {
     padding: 1.5rem;
   }
-  body {
-    background-color: #eef1f5;
-    background-image: url("../assets/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
