@@ -10828,3 +10828,73 @@ body {
   background: url("https://dummyimage.com/1920x1080/dee2e6/6c757d.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+
+/* --------------------------------------------------------------------------
+   Portfolio customisations
+   -------------------------------------------------------------------------- */
+html {
+  scroll-padding-bottom: 5rem;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84)),
+    url("https://dummyimage.com/1920x1080/dee2e6/6c757d.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.portfolio-page {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+.portfolio-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  scroll-margin-top: 2rem;
+}
+
+.portfolio-section-last {
+  padding-bottom: 8rem;
+}
+
+.portfolio-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(4px);
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6c757d;
+}
+
+.skill-badge {
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.7rem 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-page {
+    padding-bottom: 6rem;
+  }
+
+  .portfolio-section {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .portfolio-card {
+    padding: 1.5rem;
+  }
+}
