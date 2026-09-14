@@ -10827,40 +10827,23 @@ textarea.form-control-lg {
 /* --------------------------------------------------------------------------
    Portfolio customisations
    -------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------
-   Portfolio customisations
-   -------------------------------------------------------------------------- */
-
 html {
   scroll-padding-bottom: 5rem;
 }
 
 body {
   min-height: 100vh;
-  position: relative;
+  margin: 0;
   background-color: #eef1f5;
-}
-
-/* Fixed background image */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-
   background-image:
-    linear-gradient(
-      rgba(255, 255, 255, 0.35),
-      rgba(255, 255, 255, 0.35)
-    ),
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
     url("../assets/background.jpg");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* Main portfolio layout */
 .portfolio-page {
   padding-top: 1rem;
   padding-bottom: 5rem;
@@ -10878,7 +10861,6 @@ body::before {
   padding-bottom: 8rem;
 }
 
-/* Content cards */
 .portfolio-card {
   background: rgba(255, 255, 255, 0.90);
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -10888,7 +10870,6 @@ body::before {
   backdrop-filter: blur(4px);
 }
 
-/* Small heading above name */
 .eyebrow {
   font-size: 0.85rem;
   font-weight: 700;
@@ -10897,16 +10878,13 @@ body::before {
   color: #6c757d;
 }
 
-/* Skill badges */
 .skill-badge {
   font-size: 0.95rem;
   font-weight: 500;
   padding: 0.7rem 1rem;
 }
 
-/* Mobile adjustments */
 @media (max-width: 767.98px) {
-
   .portfolio-page {
     padding-bottom: 6rem;
   }
