@@ -10836,7 +10836,7 @@ body {
   margin: 0;
   background-color: #eef1f5;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+    linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
     url("../assets/background.jpg");
   background-size: cover;
   background-position: center;
